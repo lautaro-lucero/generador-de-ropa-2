@@ -1,0 +1,130 @@
+html {
+  background-color: #ff5f1f;
+  display: flex;
+  justify-content: center; 
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; 
+}
+
+#random-btn {
+  margin: 5px;
+}
+
+/*.co-container {
+  display: flex;
+  column-count: 3;
+  column-gap: 20px;
+  gap: 50px; 
+  padding: 15px;
+  width: 1000px;
+}*/
+
+.main-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px; 
+  padding: 15px;
+  width: 800px;
+}
+
+.clothes-container {
+  margin-right: 40px;
+}
+
+.ropa {
+  width: 210px; 
+  aspect-ratio: 3 / 4; 
+  object-fit: contain; 
+}
+
+.opaco {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  animation: spin 3s linear infinite;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.visible {
+  opacity: 1;
+}
+
+#girasol {
+text-align: right;
+position: fixed;
+left: 20px;
+top: 70px;
+}
+
+#girasol2 {
+text-align: right;
+position: fixed;
+left: 20px;
+top: 350px;
+}
+
+#girasol3 {
+  position: fixed;
+right: 20px;
+top: 70px;
+}
+
+#girasol4 {
+text-align: right;
+position: fixed;
+right: 20px;
+top: 350px;
+}
+
+#girasol5 {
+text-align: right;
+position: fixed;
+right: 300px;
+top: 350px;
+}
+
+#girasol6 {
+text-align: right;
+position: fixed;
+right: 600px;
+top: 350px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: 1rem;
+  color: white;
+  background-color: #ff69b4; 
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d90166; 
+}
+
+.random-button {
+  background-color: green; 
+}
+
+#selection-btn {
+  background-color: green; 
+}
+
+#selection-btn:hover {
+  background-color: #d90166; 
+}

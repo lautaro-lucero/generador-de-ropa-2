@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+   <link href="ropa.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <main>
+<button class="random-button" id="random-btn" onclick="aleatorio()">Random</button>
+<!--<button class="button" id="selection-btn" onclick="eleccion()">vestido o remera</button>-->
+<button class="button" id="selection-buzo" onclick="eleccionBuzo()">¿ Buzo/Campera ?</button>
+<button class="button" id="selection-abrigo" onclick="eleccionAbrigo()">¿ Abrigo ?</button>
+<button class="button" id="girasolBoton" onclick="giraGira()">Girasoles</button>
+<button class="button" id="girasolBoton" onclick="giraGira2()">Mas Girasoles</button>
+
+<div class="co-container">
+<div><img id="girasol" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+<div><img id="girasol2" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+
+<div class="main-container">
+<div id="vestidosOcultos" class="clothes-container" style="display: none;">
+  <img id="dress"  src="" width="220" height="490" alt="vestidos" />
+  <div class="carousel-buttons">
+    <button id="dressPrevBtn" onclick="vestidosPrev()">←</button>
+    <button id="dressNewxtBtn" onclick="vestidosNext()">→</button>
+  </div>
+</div>
+
+<div id="remerasOcultas" class="clothes-container" style="display: block;">
+  <img id="shirts" class="ropa" src="" width="220" height="220" alt="remeras" />
+  <div class="carousel-buttons">
+    <button id="shirtsPrevBtn" onclick="remerasPrev()">←</button>
+    <button id="shirtsNewxtBtn" onclick="remerasNext()">→</button>
+  </div>
+</div>
+
+<div class="clothes-container" id="buzosOcultos" style="display: block;">
+  <img id="jackets" class="ropa" src="" width="220" height="220" alt="buzos" />
+  <div class="carousel-buttons">
+    <button id="jacketsPrevBtn" onclick="buzosPrev()">←</button>
+    <button id="jacketsNextBtn" onclick="buzosNext()">→</button>
+  </div>
+</div>
+<div class="clothes-container" id="abrigosOcultos" style="display: block;">
+  <img id="coats" class="ropa" src="" width="220" height="220" alt="abrigos" />
+  <div class="carousel-buttons">
+    <button id="coatsPrevBtn" onclick="abrigosPrev()">←</button>
+    <button id="coatsNextBtn" onclick="abrigosNext()">→</button>
+</div></div>
+
+<div id="pantalonesOcultos" class="clothes-container" style="display: block;">
+  <img id="pants" class="ropa" src="" width="220" height="220" alt="pantalones" />
+  <div class="carousel-buttons">
+    <button id="pantsPrevBtn" onclick="pantalonesPrev()">←</button>
+    <button id="pantsNewxtBtn" onclick="pantalonesNext()">→</button>
+  </div>
+</div>
+</div>
+<div><img id="girasol3" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+<div><img id="girasol4" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+<div><img id="girasol5" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+<div><img id="girasol6" class="opaco" alt="backupGirasol" src="girasol.png"  width= 225px eight=225px/>
+</div>
+</div>
+  </main>
+  <script src="ropa.js"></script>
+</body>
+
+</html>
